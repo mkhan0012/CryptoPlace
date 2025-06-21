@@ -40,9 +40,9 @@ const Navbar = () => {
             {/* Navigation links */}
             <ul>
                 <Link to={'/'}> <li>Home</li></Link>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Blog</li>
+                <Link to={'/features'}> <li>Features</li></Link>
+                <Link to={'/pricing'}> <li>Pricing</li></Link>
+                <Link to={'/blog'}> <li>Blog</li></Link>
             </ul>
             <div className="nav-right">
                 {/* Currency selection dropdown */}
@@ -52,7 +52,9 @@ const Navbar = () => {
                     <option value="inr">INR</option>
                 </select>
                 {/* Sign up button */}
-                <button>Sign up <img src={arrow_icon} alt="" /></button>
+                <Link to="/signup">
+                    <button>Sign up <img src={arrow_icon} alt="" /></button>
+                </Link>
             </div>
         </div>
     )
