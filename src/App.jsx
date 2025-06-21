@@ -9,6 +9,7 @@ import Pricing from './pages/Pricing/Pricing'
 import Login from './pages/Auth/Login'
 import Signup from './pages/Auth/Signup'
 import Footer from './components/Footer/Footer'
+import LineChart from './components/LineCart/LineCart'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/line-chart' element={<LineChart />} />
       </Routes>
       <Footer />
     </div>

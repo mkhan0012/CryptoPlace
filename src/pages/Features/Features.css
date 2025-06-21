@@ -195,6 +195,559 @@
     flex-shrink: 0;
 }
 
+.live-demo-section {
+    margin-bottom: 32px;
+}
+
+.live-demo-section h4 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Feature Demo Styles */
+.feature-demo {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(10px);
+}
+
+.demo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-header h4 {
+    color: #4500c6;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.live-indicator {
+    background: #ff4646;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.portfolio-value,
+.security-score,
+.defi-tvl,
+.trading-status,
+.ai-status {
+    background: rgba(69, 0, 198, 0.2);
+    color: #4500c6;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Market Data Demo */
+.market-data-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.market-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coin-info img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.coin-name {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.coin-full-name {
+    color: #888;
+    font-size: 12px;
+}
+
+.price-info {
+    text-align: right;
+}
+
+.current-price {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.price-change {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.price-change.positive {
+    color: #00d515;
+}
+
+.price-change.negative {
+    color: #ff4646;
+}
+
+.demo-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.stat {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.stat-value {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.stat-label {
+    color: #888;
+    font-size: 12px;
+}
+
+/* Portfolio Demo */
+.portfolio-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.summary-label {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.summary-value {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.summary-value.positive {
+    color: #00d515;
+}
+
+.summary-value.negative {
+    color: #ff4646;
+}
+
+.holdings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.holding-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.holding-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.holding-symbol {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.holding-amount {
+    color: #888;
+    font-size: 12px;
+}
+
+.holding-value {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.value {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.change {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.change.positive {
+    color: #00d515;
+}
+
+.change.negative {
+    color: #ff4646;
+}
+
+/* AI Demo */
+.sentiment-meter {
+    margin-bottom: 20px;
+}
+
+.sentiment-label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.sentiment-bar {
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.sentiment-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff4646, #ff9500, #00d515);
+    transition: width 0.3s ease;
+}
+
+.sentiment-value {
+    color: #00d515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ai-signals h5 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.signal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.signal-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.signal-type {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.signal-type.buy {
+    background: rgba(0, 213, 21, 0.2);
+    color: #00d515;
+}
+
+.signal-type.sell {
+    background: rgba(255, 70, 70, 0.2);
+    color: #ff4646;
+}
+
+.signal-type.hold {
+    background: rgba(255, 149, 0, 0.2);
+    color: #ff9500;
+}
+
+.signal-coin {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.signal-details {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.confidence {
+    color: #4500c6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reason {
+    color: #888;
+    font-size: 11px;
+}
+
+/* Security Demo */
+.security-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.security-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 3px solid transparent;
+}
+
+.security-item.active {
+    border-left-color: #00d515;
+    background: rgba(0, 213, 21, 0.05);
+}
+
+.security-icon {
+    font-size: 20px;
+}
+
+.security-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.security-name {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.security-status {
+    color: #888;
+    font-size: 12px;
+}
+
+.wallet-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.wallet-stat {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+/* DeFi Demo */
+.defi-opportunities {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.defi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.defi-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.protocol-name {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.asset-name {
+    color: #888;
+    font-size: 12px;
+}
+
+.defi-metrics {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.apy {
+    color: #00d515;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.risk {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.risk.low {
+    background: rgba(0, 213, 21, 0.2);
+    color: #00d515;
+}
+
+.risk.medium {
+    background: rgba(255, 149, 0, 0.2);
+    color: #ff9500;
+}
+
+.risk.high {
+    background: rgba(255, 70, 70, 0.2);
+    color: #ff4646;
+}
+
+.defi-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.summary-stat {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+/* Trading Demo */
+.trading-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.trading-stat {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.active-orders h5 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.order-type {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.order-type.stop-loss {
+    background: rgba(255, 70, 70, 0.2);
+    color: #ff4646;
+}
+
+.order-type.take-profit {
+    background: rgba(0, 213, 21, 0.2);
+    color: #00d515;
+}
+
+.order-type.limit {
+    background: rgba(69, 0, 198, 0.2);
+    color: #4500c6;
+}
+
+.order-pair {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.order-price {
+    color: #888;
+    font-size: 14px;
+}
+
 .cta-button {
     display: flex;
     align-items: center;
@@ -208,11 +761,36 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    justify-content: center;
 }
 
-.cta-button:hover {
+.cta-button:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(69, 0, 198, 0.4);
+}
+
+.cta-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.cta-button.loading {
+    pointer-events: none;
+}
+
+.spinner-small {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .arrow {
@@ -322,6 +900,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .primary-cta:hover {
@@ -340,6 +920,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    text-decoration: none;
+    display: inline-block;
 }
 
 .secondary-cta:hover {
@@ -362,6 +944,11 @@
     .benefits-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
+    }
+    
+    .trading-summary {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }
 
@@ -442,6 +1029,14 @@
         width: 100%;
         max-width: 300px;
     }
+    
+    .demo-stats,
+    .portfolio-summary,
+    .wallet-stats,
+    .defi-summary {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -465,5 +1060,18 @@
     
     .features-cta {
         padding: 40px 20px;
+    }
+    
+    .feature-demo {
+        padding: 16px;
+    }
+    
+    .market-item,
+    .holding-item,
+    .signal-item,
+    .security-item,
+    .defi-item,
+    .order-item {
+        padding: 8px;
     }
 }
