@@ -48,6 +48,7 @@ const Features = () => {
                 "Price alerts and notifications"
             ],
             image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
+            link: "/features/market-data",
             demo: () => (
                 <div className="feature-demo">
                     <div className="demo-header">
@@ -101,6 +102,7 @@ const Features = () => {
                 "Tax reporting tools"
             ],
             image: "https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=800",
+            link: "/features/portfolio",
             demo: () => (
                 <div className="feature-demo">
                     <div className="demo-header">
@@ -151,6 +153,7 @@ const Features = () => {
                 "Personalized trading signals"
             ],
             image: "https://images.pexels.com/photos/8369648/pexels-photo-8369648.jpeg?auto=compress&cs=tinysrgb&w=800",
+            link: "/features/ai-analysis",
             demo: () => (
                 <div className="feature-demo">
                     <div className="demo-header">
@@ -198,6 +201,7 @@ const Features = () => {
                 "Insurance coverage up to $1M"
             ],
             image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800",
+            link: "/features/secure-wallet",
             demo: () => (
                 <div className="feature-demo">
                     <div className="demo-header">
@@ -362,8 +366,8 @@ const Features = () => {
         setDemoMode(true);
         // Simulate feature activation
         setTimeout(() => {
-            alert(`${features[activeFeature].title} demo activated! This would normally redirect to the feature interface.`);
-            setDemoMode(false);
+            // Navigate to the specific feature page
+            window.location.href = features[activeFeature].link;
         }, 1000);
     };
 
@@ -433,11 +437,11 @@ const Features = () => {
                             {demoMode ? (
                                 <>
                                     <div className="spinner-small"></div>
-                                    Activating...
+                                    Loading...
                                 </>
                             ) : (
                                 <>
-                                    Try This Feature
+                                    Explore This Feature
                                     <span className="arrow">→</span>
                                 </>
                             )}
